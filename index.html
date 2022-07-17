@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/perfil.png" />
+    <link rel="icon" href="assets/img/perfil.JPG" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- BOX ICONS -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
@@ -15,7 +15,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Hussenat</a>
+                <a href="#" class="nav__logo">Monica</a>
             </div>
             
             <div class="nav__menu" id="nav-menu">
@@ -50,7 +50,7 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">
-                    Hi<br /> I'am <span class="home__title-color">Hussenat</span>
+                    Hi<br /> I'am <span class="home__title-color">Monica</span>
                     <br />
                     Web Designer
                 </h1>
@@ -58,7 +58,8 @@
                 <a
                 href=""
                 class="button"
-                target="_blank"
+                target=""
+                onclick="openForm()"
                 >Download CV</a>
             </div>
 
@@ -75,7 +76,7 @@
             </div>
 
             <div class="home__img">
-                <img src="assets/img/perfil.png" alt="Hussenat image" />
+                <img src="assets/img/perfil.JPG" alt="Hussenat image" />
             </div>
         </section>
 
@@ -85,11 +86,11 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="about image" />
+                    <img src="assets/img/about.JPG" alt="about image" />
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Hussenat</h2>
+                    <h2 class="about__subtitle">I'am Monica</h2>
                     <p class="about__text">
                         I am Web Developer, and I'm very passionate and dedicated to my work. With 10 years experience
                         as a professional Web Developer, have acquired the skills and knowledge necessary to make your project a success.
@@ -218,7 +219,7 @@
                     name="hidden_iframe"
                     id="hidden_iframe"
                     style="display: none"
-                    onload="if(submitted) {window.location='';}"
+                    onload="if(submitted) {window.location='https://portfoliohtmlcss19.netlify.app/';}"
                 ></iframe>
                 <!-- redirect user to your website after submitting to Google sheets end -->
                 <form
@@ -257,14 +258,30 @@
         </section>
     </main>
 
+    <!-- PopUp Start -->
+    <div class="form-popup" id="myForm">
+        <div type="button" class="popup-close" onclick="closeForm()">&times;</div>
+        <form class="form-container">
+            <h2>Choose Format</h2>
+            <div class="centralize">
+                <label><b>PDF Format</b></label>
+                <button class="button"> <a href="https://drive.google.com/file/d/13iTIETkmRz-iys3uWO3mNQbbIs-eSA5T/view?usp=sharing" style="color: #ffffff;" target="_">Dowload</a></button><br>
+                <br>
+                <label><b>Ms Word</b></label>
+                <button class="button"> <a href="https://docs.google.com/document/d/1VYY45YH2H9fUFJaiy9tMobFeWdJ7QO-kFG-Gj_U0TZI/edit?usp=sharing" style="color: #ffffff;" target="_">Dowload</a></button><br>
+            </div>
+        </form>
+    </div>
+    <!-- PopUp End -->
+
     <!-- FOOTER -->
     <footer class="footer">
         <p class="footer__title">Hussenat</p>
 
         <div class="footer__social">
-            <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/aremu.olabisi.35" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+            <a href="https://twitter.com/Hussenat09" class="footer__icon"><i class="bx bxl-twitter"></i></a>
         </div>
         <p>&#169; 2022 copyright all right reserved</p>
     </footer>

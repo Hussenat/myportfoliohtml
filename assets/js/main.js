@@ -56,3 +56,11 @@ sr.reveal('.work__img', { interval: 200 });
 
 // SCROLL CONTACT
 sr.reveal('.contact__input', { interval: 300 });
+
+// popup download button for cv
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
